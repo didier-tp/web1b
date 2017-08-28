@@ -9,7 +9,14 @@
 </head>
 <body>
 	<%@ include file="header.jsp"%>
-	Corps de la page
+	<div class="formulaire">
+		<form method="POST" action="">
+			<label for="username">Username : </label><input type="text"
+				placeholder="Your username"><br /> <label for="password">Password
+				: </label><input type="password" placeholder="Your password"><br />
+			<input type="submit" value="Login">
+		</form>
+	</div>
 	<%@ include file="footer.jsp"%>
 </body>
 </html>
