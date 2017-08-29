@@ -10,7 +10,14 @@
 	%>
 	Nous sommes le :
 	<%=d%>
-	<br />Menu : <a href="login.jsp">Login</a> ||
+	<br />Menu :
+	<%
+		if (session.getAttribute("connecte") == null) {
+	%>
+	<a href="login.jsp">Login</a> ||
+	<%
+		}
+	%>
 	<%
 		if (session.getAttribute("connecte") != null && session.getAttribute("connecte").equals(true)) {
 	%>
