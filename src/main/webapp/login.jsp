@@ -33,8 +33,7 @@
 	</div>
 	<hr />
 	<%
-		if (username != null && username.equals("admin") && password != null && password.equals("pwd")) {
-			session.setAttribute("username", username);
+		if (session.getAttribute("connecte") != null && session.getAttribute("connecte").equals(true)) {
 	%>
 	Connecté en tant que :
 	<%=username%>
