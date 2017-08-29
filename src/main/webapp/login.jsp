@@ -25,9 +25,11 @@
 	<hr />
 	<%
 		if (username != null && username.equals("admin") && password != null && password.equals("pwd")) {
+			session.setAttribute("username",username);
 	%>
 	Connecté en tant que :
-	<%=username%>
+	<%=username%> <br />
+	<a href="compte.jsp">Accéder à mon compte</a>
 	<%
 		}
 	%>
