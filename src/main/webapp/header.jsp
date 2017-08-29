@@ -13,7 +13,10 @@
 	<br />Menu : <a href="login.jsp">Login</a> ||
 	<%
 		if (session.getAttribute("connecte") != null && session.getAttribute("connecte").equals(true)) {
-			%> <a href="compte.jsp">Mon Compte</a> || <%
+	%>
+	<a href="compte.jsp">Mon Compte</a> || <a href="param_resa.jsp">Réserver
+		un vol</a> ||
+	<%
 		}
 	%>
 </div>
