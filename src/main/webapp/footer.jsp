@@ -1,4 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    <hr />
-    Footer
+	pageEncoding="ISO-8859-1"%>
+<hr />
+<a href="index.jsp">Retour à l'accueil</a>

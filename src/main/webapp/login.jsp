@@ -12,6 +12,15 @@
 	String password = request.getParameter("password");
 %>
 <body>
+	<%
+		if (username != null && username.equals("admin") && password != null && password.equals("pwd")) {
+			session.setAttribute("username", username);
+	%>
+	<%
+		Boolean connecte = true;
+			session.setAttribute("connecte", connecte);
+		}
+	%>
 	<%@ include file="header.jsp"%>
 	<div class="formulaire">
 		<form method="POST" action="">
@@ -25,11 +34,10 @@
 	<hr />
 	<%
 		if (username != null && username.equals("admin") && password != null && password.equals("pwd")) {
-			session.setAttribute("username",username);
+			session.setAttribute("username", username);
 	%>
 	Connecté en tant que :
-	<%=username%> <br />
-	<a href="compte.jsp">Accéder à mon compte</a>
+	<%=username%>
 	<%
 		}
 	%>

@@ -5,11 +5,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" href="css/style.css">
-<title>Index</title>
+<title>Welcome</title>
 </head>
 <body>
 	<%@ include file="header.jsp"%>
-	<jsp:forward page="welcome.jsp" />
+	WILKOMMEN !
 	<%@ include file="footer.jsp"%>
 </body>
 </html>
