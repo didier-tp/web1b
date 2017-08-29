@@ -15,9 +15,7 @@
 	<%
 		if (username != null && username.equals("admin") && password != null && password.equals("pwd")) {
 			session.setAttribute("username", username);
-	%>
-	<%
-		Boolean connecte = true;
+			Boolean connecte = true;
 			session.setAttribute("connecte", connecte);
 		}
 	%>

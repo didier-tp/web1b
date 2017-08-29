@@ -25,5 +25,14 @@
 		un vol</a> ||
 	<%
 		}
+	%><br />
+	<%
+		if (session.getAttribute("connecte") != null && session.getAttribute("connecte").equals(true)
+				&& session.getAttribute("username") != null) {
+	%>
+	Connecté en tant que :
+	<%=session.getAttribute("username")%>
+	<%
+		}
 	%>
 </div>
