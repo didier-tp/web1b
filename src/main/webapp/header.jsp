@@ -16,6 +16,10 @@
 	%>
 	<a href="login.jsp">Login</a> ||
 	<%
+		} else {
+	%>
+	<a href="deconnexion.jsp">Déconnexion</a> ||
+	<%
 		}
 	%>
 	<%
