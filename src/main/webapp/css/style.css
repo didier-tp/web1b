@@ -27,3 +27,8 @@ a:visited {
     width: 100%;
     clear: both;
 }
+
+.formulaire select {
+    width: 100%;
+    clear: both;
+}

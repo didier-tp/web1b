@@ -9,7 +9,23 @@
 </head>
 <body>
 	<%@ include file="header.jsp"%>
-	Corps de la page
+	<div class="formulaire">
+		<form method="post" action="ServletResa">
+			<label for="depart">Départ : </label><select name="depart"><option
+					selected hidden>Ville de départ</option>
+				<option>Paris</option>
+				<option>Amsterdam</option>
+				<option>Ibiza</option>
+			</select><br /> <label for="arrivee">Arrivée : </label><select name="arrivee"><option
+					selected hidden>Ville d'arrivée</option>
+				<option>Paris</option>
+				<option>Amsterdam</option>
+				<option>Ibiza</option>
+			</select><br /> <label for="datedepart">Date de départ : </label><input type="date"
+				name="datedepart" placeholder="jj/mm/aaaa"><br /> <input
+				type="submit" value="Réserver">
+		</form>
+	</div>
 	<%@ include file="footer.jsp"%>
 </body>
 </html>
